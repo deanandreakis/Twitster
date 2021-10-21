@@ -25,6 +25,11 @@ class HomeTableViewController: UITableViewController {
         tableView.refreshControl = refreshment
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.loadTweets()
+    }
+    
     @objc func loadTweets() {
         
         numberOfTweets = 25
@@ -91,6 +96,10 @@ class HomeTableViewController: UITableViewController {
         if let imageData = data {
             cell.userImage.image = UIImage(data: imageData)
         }
+        
+        cell.setLike(timeline[indexPath.row]["favorited"] as! Bool)
+        cell.tweetId = timeline[indexPath.row]["id"] as! Int
+        cell.setRetweet(timeline[indexPath.row]["retweeted"] as! Bool)
         
         return cell
     }
