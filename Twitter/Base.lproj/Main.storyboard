@@ -85,9 +85,8 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLA-Pj-WTX">
-                                            <rect key="frame" x="341" y="91" width="30" height="30"/>
+                                            <rect key="frame" x="263" y="91" width="108" height="30"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="30" id="TSp-j1-Dvr"/>
                                                 <constraint firstAttribute="height" constant="30" id="fcG-gN-OD8"/>
                                             </constraints>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -97,7 +96,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5Y-7k-adm">
-                                            <rect key="frame" x="307" y="93" width="30" height="30"/>
+                                            <rect key="frame" x="229" y="93" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="9B5-Sr-D37"/>
                                                 <constraint firstAttribute="width" constant="30" id="D6L-AY-kKj"/>
@@ -108,8 +107,8 @@
                                                 <action selector="retweet:" destination="dci-OK-6mW" eventType="touchUpInside" id="tXk-1N-uaI"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CreatedOnLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zN-v9-nzD">
-                                            <rect key="frame" x="84" y="92" width="170" height="14.333333333333329"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CreatedOnLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zN-v9-nzD">
+                                            <rect key="frame" x="84" y="92" width="92" height="14.333333333333329"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -117,17 +116,21 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="gNi-nB-xcI" firstAttribute="top" secondItem="pmJ-oD-cQ4" secondAttribute="top" constant="6" id="0uI-mw-Mw6"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="yMv-xF-fSc" secondAttribute="bottom" constant="38" id="5Hp-bX-QMp"/>
                                         <constraint firstItem="yMv-xF-fSc" firstAttribute="leading" secondItem="pmJ-oD-cQ4" secondAttribute="leading" constant="6" id="7Q9-Wb-PuG"/>
                                         <constraint firstItem="yMv-xF-fSc" firstAttribute="top" secondItem="pmJ-oD-cQ4" secondAttribute="top" constant="6" id="9Hj-33-Z32"/>
                                         <constraint firstAttribute="trailing" secondItem="gNi-nB-xcI" secondAttribute="trailing" constant="6" id="BEX-zh-TaB"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="2zN-v9-nzD" secondAttribute="bottom" constant="7.6666666666666714" id="DZn-FZ-Usc"/>
                                         <constraint firstItem="rmi-NP-hps" firstAttribute="top" secondItem="gNi-nB-xcI" secondAttribute="bottom" constant="2" id="GsC-5S-U7T"/>
                                         <constraint firstItem="BLA-Pj-WTX" firstAttribute="leading" secondItem="O5Y-7k-adm" secondAttribute="trailing" constant="4" id="JP6-Sl-D7q"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="rmi-NP-hps" secondAttribute="trailing" constant="6" id="SeW-Mf-Opk"/>
                                         <constraint firstItem="rmi-NP-hps" firstAttribute="leading" secondItem="yMv-xF-fSc" secondAttribute="trailing" constant="8" id="T35-0J-Q84"/>
+                                        <constraint firstItem="O5Y-7k-adm" firstAttribute="leading" secondItem="2zN-v9-nzD" secondAttribute="trailing" constant="53" id="WGb-9w-mWh"/>
                                         <constraint firstItem="gNi-nB-xcI" firstAttribute="leading" secondItem="yMv-xF-fSc" secondAttribute="trailing" constant="8" id="ZgG-wj-YPz"/>
                                         <constraint firstItem="2zN-v9-nzD" firstAttribute="top" secondItem="rmi-NP-hps" secondAttribute="bottom" constant="2" id="dbg-gN-UuU"/>
                                         <constraint firstAttribute="bottom" secondItem="O5Y-7k-adm" secondAttribute="bottom" constant="2" id="dgy-jG-CNS"/>
                                         <constraint firstAttribute="bottom" secondItem="BLA-Pj-WTX" secondAttribute="bottom" constant="4" id="fHS-9R-UAd"/>
+                                        <constraint firstItem="2zN-v9-nzD" firstAttribute="leading" secondItem="rmi-NP-hps" secondAttribute="leading" id="hlN-vl-APS"/>
                                         <constraint firstAttribute="trailing" secondItem="BLA-Pj-WTX" secondAttribute="trailing" constant="4" id="k1p-qV-tKU"/>
                                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yMv-xF-fSc" secondAttribute="bottom" constant="6" id="oeO-A0-6AZ"/>
                                         <constraint firstItem="BLA-Pj-WTX" firstAttribute="top" secondItem="rmi-NP-hps" secondAttribute="bottom" constant="1" id="oiN-va-Oht"/>
