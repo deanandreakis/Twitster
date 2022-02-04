@@ -89,9 +89,7 @@ class HomeTableViewController: UITableViewController {
         
         cell.userLabel.text = (user["name"] as! String)
         cell.tweetLabel.text = (timeline[indexPath.row]["text"] as! String)
-        cell.createdOnLabel.text = (timeline[indexPath.row]["created_at"] as! String)
-        //"Fri Feb 04 15:33:51 +0000 2022"
-        //[dateFormatter setDateFormat:@"EEE MMM dd HH:mm:ss Z yyyy"];
+        cell.createdOnLabel.text = twitterDateFormatter((timeline[indexPath.row]["created_at"] as! String)).timeAgoDisplay()
         
         let imageUrl = URL(string: (user["profile_image_url_https"] as? String)!)
         let data = try? Data(contentsOf: imageUrl!)
