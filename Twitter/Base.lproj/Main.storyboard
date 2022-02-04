@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0wu-hH-mNs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0wu-hH-mNs">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -108,6 +108,12 @@
                                                 <action selector="retweet:" destination="dci-OK-6mW" eventType="touchUpInside" id="tXk-1N-uaI"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CreatedOnLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zN-v9-nzD">
+                                            <rect key="frame" x="84" y="92" width="170" height="14.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="gNi-nB-xcI" firstAttribute="top" secondItem="pmJ-oD-cQ4" secondAttribute="top" constant="6" id="0uI-mw-Mw6"/>
@@ -119,6 +125,7 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="rmi-NP-hps" secondAttribute="trailing" constant="6" id="SeW-Mf-Opk"/>
                                         <constraint firstItem="rmi-NP-hps" firstAttribute="leading" secondItem="yMv-xF-fSc" secondAttribute="trailing" constant="8" id="T35-0J-Q84"/>
                                         <constraint firstItem="gNi-nB-xcI" firstAttribute="leading" secondItem="yMv-xF-fSc" secondAttribute="trailing" constant="8" id="ZgG-wj-YPz"/>
+                                        <constraint firstItem="2zN-v9-nzD" firstAttribute="top" secondItem="rmi-NP-hps" secondAttribute="bottom" constant="2" id="dbg-gN-UuU"/>
                                         <constraint firstAttribute="bottom" secondItem="O5Y-7k-adm" secondAttribute="bottom" constant="2" id="dgy-jG-CNS"/>
                                         <constraint firstAttribute="bottom" secondItem="BLA-Pj-WTX" secondAttribute="bottom" constant="4" id="fHS-9R-UAd"/>
                                         <constraint firstAttribute="trailing" secondItem="BLA-Pj-WTX" secondAttribute="trailing" constant="4" id="k1p-qV-tKU"/>
@@ -127,6 +134,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="createdOnLabel" destination="2zN-v9-nzD" id="PmP-Bi-Abn"/>
                                     <outlet property="likeButton" destination="BLA-Pj-WTX" id="YVl-75-5k3"/>
                                     <outlet property="retweetButton" destination="O5Y-7k-adm" id="7y2-jC-CJB"/>
                                     <outlet property="tweetLabel" destination="rmi-NP-hps" id="5RE-9N-Mf2"/>
@@ -136,7 +144,6 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="UVP-Va-yOy" id="igo-FD-T8V"/>
                             <outlet property="delegate" destination="UVP-Va-yOy" id="HjH-Ye-Q8J"/>
                         </connections>
                     </tableView>
